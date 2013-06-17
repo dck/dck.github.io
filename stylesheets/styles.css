@@ -44,7 +44,7 @@ body {
   width: 50%;
   margin: auto;
   padding: auto;
-  margin-bottom: 1em;
+  margin-bottom: 5em;
 }
 
 #persinfo .info {
@@ -72,20 +72,33 @@ body {
 #social ul li {
   float:none;
   display: inline-block;
-  margin: 0px 10px;
+  margin: 0px 20px;
 }
 
 #social ul li a {
   text-decoration: none;
   color: #000;
-  font-size: 64px;
+  font-size: 42px;
 }
 
-#social ul li a:hover {
-  color: #869CB5;
+#social ul li a.icon-mail:hover {
+  color: #FECF23;
 }
-
-
+#social ul li a.icon-twitter-3:hover {
+  color: #00ACED;
+}
+#social ul li a.icon-github-01:hover {
+  color: #333333;
+}
+#social ul li a.icon-skype:hover {
+  color: #0ABFF2;
+}
+#social ul li a.icon-grooveshark:hover {
+  color: #F7860C;
+}
+#social ul li a.icon-last_fm:hover {
+  color: #D51007;
+}
 
 footer {
   margin-top: 6em;
