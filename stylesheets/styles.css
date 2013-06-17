@@ -4,18 +4,43 @@ body {
 
 #wrapper {
   width: 80%; 
-  margin:0 auto;  
-  text-align:center;  
+  margin: 0 auto;  
+  text-align:center;
 }
 
-#info {
-  width: 30%;
-  height: 30%;
-  background-color: red;
-  position: absolute;
-  top:0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+#welcome {
+  margin-bottom: 15%;
+}
+
+#persinfo {
+  width: 50%;
   margin: auto;
+  padding: auto;
+}
+
+#persinfo  img {
+  float: left; 
+}
+
+#persinfo  #name {
+  font-size: 28px;
+}
+
+#persinfo  #description {
+  font-size: 14px;
+  color: #cccccc;
+}
+
+
+
+#social {
+}
+
+
+footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 13px;
+  color: #aaa;
 }
