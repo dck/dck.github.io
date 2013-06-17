@@ -1,2 +1,2 @@
-dck.github.io
+http://usanov.info
 =============
