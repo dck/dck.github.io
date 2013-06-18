@@ -50,7 +50,11 @@ body {
   margin-bottom: 5em;
 }
 
-#persinfo img{
+#persinfo img {
+}
+
+#persinfo  a {
+  color: #000;
 }
 
 #persinfo .info {
