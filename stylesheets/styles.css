@@ -28,7 +28,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   text-align: center;
-  background: #f1f1f1;
+  background: #F2EBC7;
   font-family: 'Comfortaa', cursive;
 }
 
@@ -40,7 +40,7 @@ body {
 #welcome {
   margin-bottom: 6%;
   height: 5px;
-  background: #869CB5;
+  background: #348899;
 }
 
 #persinfo {
@@ -70,7 +70,7 @@ body {
 #persinfo  #description {
   font-size: 16px;
   color: #aaa;
-  color: #869CB5;
+  color: #348899;
 }
 
 #social {
