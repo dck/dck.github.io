@@ -101,6 +101,10 @@ body {
 #social ul li a.icon-google__x2B_:hover {
   color: #CF3E2B;
 }
+#social ul li a.icon-linkedin:hover {
+  color: #0e76a8;
+}
+
 #social ul li a.icon-github-01:hover {
   color: #333333;
 }
