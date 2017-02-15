@@ -9,8 +9,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -21,33 +21,33 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
 body {
   text-align: center;
-  background: #f1f1f1;
+  background: #eeeeee;
   font-family: 'Comfortaa', cursive;
 }
 
 #wrapper {
-  width: 80%; 
+  width: 80%;
   margin: 0 auto;
 }
 
 #welcome {
   margin-bottom: 6%;
   height: 5px;
-  background: #27356E;
+  background: #2b3c67;
 }
 
 #persinfo {
   width: 50%;
   margin: auto;
   padding: auto;
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
 
 #persinfo img {
@@ -59,18 +59,18 @@ body {
 
 #persinfo .info {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 3em;
 }
 
-#persinfo  #name {
+#persinfo #name {
   font-size: 38px;
-  margin-bottom: 0.1em;
+  margin-bottom: 0.2em;
 }
 
-#persinfo  #description {
+#persinfo #description {
   font-size: 16px;
   color: #aaa;
-  color: #27356E;
+  color: #2b3c67;
 }
 
 #social {
@@ -95,6 +95,9 @@ body {
 #social ul li a.icon-mail:hover {
   color: #FECF23;
 }
+#social ul li a.icon-skype:hover {
+  color: #0ABFF2;
+}
 #social ul li a.icon-twitter-3:hover {
   color: #00ACED;
 }
@@ -105,23 +108,16 @@ body {
   color: #3B5998;
 }
 #social ul li a.icon-linkedin:hover {
-  color: #0e76a8;
+  color: #0E76A8;
 }
-
 #social ul li a.icon-github-01:hover {
   color: #333333;
 }
 #social ul li a.icon-rus-habrahbr:hover {
   color: #80A1B0;
 }
-#social ul li a.icon-skype:hover {
-  color: #0ABFF2;
-}
-#social ul li a.icon-grooveshark:hover {
-  color: #F7860C;
-}
-#social ul li a.icon-last_fm:hover {
-  color: #D51007;
+#social ul li a.icon-google__x2B_:hover {
+  color: #CF3E2B;
 }
 
 footer {
