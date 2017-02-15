@@ -98,8 +98,11 @@ body {
 #social ul li a.icon-twitter-3:hover {
   color: #00ACED;
 }
-#social ul li a.icon-google__x2B_:hover {
-  color: #CF3E2B;
+#social ul li a.icon-instagram:hover {
+  color: #BC2A8D;
+}
+#social ul li a.icon-facebook:hover {
+  color: #3B5998;
 }
 #social ul li a.icon-linkedin:hover {
   color: #0e76a8;
