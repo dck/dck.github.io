@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Comfortaa);
+@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   text-align: center;
   background: #eeeeee;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Space Mono', monospace;
 }
 
 #wrapper {
@@ -47,10 +47,7 @@ body {
   width: 50%;
   margin: auto;
   padding: auto;
-  margin-bottom: 3em;
-}
-
-#persinfo img {
+  margin-bottom: 2.5em;
 }
 
 #persinfo  a {
@@ -59,12 +56,11 @@ body {
 
 #persinfo .info {
   width: 100%;
-  margin-top: 3em;
+  margin-top: 1.5em;
 }
 
 #persinfo #name {
   font-size: 38px;
-  margin-bottom: 0.2em;
 }
 
 #persinfo #description {
