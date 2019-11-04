@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Asap+Condensed&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -28,8 +28,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   text-align: center;
-  background: #eeeeee;
-  font-family: 'Space Mono', monospace;
+  background: #eeeeea;
+  font-family: 'Asap Condensed', monospace;
 }
 
 #wrapper {
@@ -60,11 +60,11 @@ body {
 }
 
 #persinfo #name {
-  font-size: 38px;
+  font-size: 46px;
 }
 
 #persinfo #description {
-  font-size: 16px;
+  font-size: 24px;
   color: #aaa;
   color: #2b3c67;
 }
@@ -78,7 +78,7 @@ body {
 #social ul li a {
   text-decoration: none;
   color: #000;
-  font-size: 42px;
+  font-size: 36px;
 }
 
 #social ul li a.icon-mail:hover {
