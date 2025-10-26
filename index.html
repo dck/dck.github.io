@@ -1,48 +1,247 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pictonic.css" />
-    <link rel="shortcut icon" href="/favicon.png" />
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>Usanov Denis</title>
-  </head>
-  <body>
-  <header id="welcome">
-  </header>
-  <div id="wrapper">
-    <div id="persinfo">
-        <a href="/"><img width="250" height="250" src="images/picture.png" alt="me"></a>
-        <div class="info">
-          <div id="name">Usanov Denis</div>
-          <div id="description">Software Engineer</div>
-        </div>
-    </div>
-    <div id="social">
-        <ul>
-          <li><a href="mailto:denis@usanov.info" class='icon-mail'></a></li>
-          <li><a href="skype:hypotap?userinfo" class='icon-skype'></a></li>
-          <li><a href="https://twitter.com/denis_usanov" class='icon-twitter-3'></a></li>
-          <li><a href="https://www.instagram.com/denis_usanov" class='icon-instagram'></a></li>
-          <li><a href="https://www.facebook.com/al.deckle" class='icon-facebook'></a></li>
-          <li><a href="http://www.linkedin.com/in/dusanov" class='icon-linkedin'></a></li>
-          <li><a href="https://github.com/dck" class='icon-github-01'></a></li>
-          <li><a href="http://habrahabr.ru/users/dck/" class='icon-rus-habrahbr'></a></li>
-        </ul>
+<head>
+<meta charset='utf-8'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="shortcut icon" href="/favicon.png" />
+<title>Usanov Denis</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background: #F5F5F3;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#welcome {
+  height: 12px;
+  background: linear-gradient(135deg, #A8B196 0%, #C4B998 50%, #A8B196 100%);
+  box-shadow: 0 4px 16px rgba(168, 177, 150, 0.4);
+  position: relative;
+}
+
+#welcome::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(180deg, rgba(168, 177, 150, 0.15) 0%, transparent 100%);
+}
+
+#wrapper {
+  flex: 1;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 80px 20px 40px;
+}
+
+#persinfo {
+  margin-bottom: 50px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#persinfo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 10px 30px rgba(168, 177, 150, 0.25);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
+  position: relative;
+}
+
+#persinfo a {
+  display: inline-block;
+  position: relative;
+}
+
+#persinfo a::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #C4B998 0%, #A8B196 100%);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+#persinfo a:hover::before {
+  opacity: 0.6;
+}
+
+#persinfo a:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 14px 40px rgba(168, 177, 150, 0.35);
+}
+
+.info {
+  margin-top: 32px;
+}
+
+#name {
+  font-size: 48px;
+  font-weight: 700;
+  color: #3D3D37;
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+}
+
+#description {
+  font-size: 20px;
+  color: #7A8070;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+#social ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+#social ul li {
+  display: inline-block;
+}
+
+#social ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  text-decoration: none;
+  color: #5A5A52;
+  font-size: 24px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+}
+
+#social ul li a:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+#social ul li a:active {
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* Individual icon colors on hover - coordinated with sage/olive/beige palette */
+#social ul li a[href*="mailto"]:hover {
+  background: #C4B998;
+  color: #fff;
+}
+
+#social ul li a[href*="instagram"]:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #fff;
+}
+
+#social ul li a[href*="linkedin"]:hover {
+  background: #0A66C2;
+  color: #fff;
+}
+
+#social ul li a[href*="github"]:hover {
+  background: #3D3D37;
+  color: #fff;
+}
+
+#social ul li a[href*="habrahabr"]:hover {
+  background: #A8B196;
+  color: #fff;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  #wrapper {
+    padding: 60px 20px 30px;
+  }
+
+  #welcome {
+    height: 10px;
+  }
+
+  #persinfo img {
+    width: 160px;
+    height: 160px;
+  }
+
+  #name {
+    font-size: 36px;
+  }
+
+  #description {
+    font-size: 18px;
+  }
+
+  #social ul li a {
+    width: 52px;
+    height: 52px;
+    font-size: 22px;
+  }
+
+  #social ul {
+    gap: 14px;
+  }
+}
+</style>
+</head>
+<body>
+<header id="welcome"></header>
+<div id="wrapper">
+  <div id="persinfo">
+    <a href="/">
+      <img src="images/picture.png" alt="Usanov Denis">
+    </a>
+    <div class="info">
+      <div id="name">Usanov Denis</div>
+      <div id="description">Software Engineer</div>
     </div>
   </div>
-  <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-  </script>
-  <script type="text/javascript">
-    try {
-      var pageTracker = _gat._getTracker("UA-41798603-1");
-      pageTracker._trackPageview();
-    } catch(err) {}
-  </script>
-  </body>
+  <div id="social">
+    <ul>
+      <li><a href="mailto:denis@usanov.info" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+      <li><a href="https://www.instagram.com/denis_usanov" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="http://www.linkedin.com/in/dusanov" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+      <li><a href="https://github.com/dck" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+      <li><a href="http://habrahabr.ru/users/dck/" aria-label="Habr"><i class="fas fa-blog"></i></a></li>
+    </ul>
+  </div>
+</div>
+</body>
 </html>
