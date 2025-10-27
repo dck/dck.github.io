@@ -4,11 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Usanov Denis — Software Engineer</title>
+  <meta name="description" content="Usanov Denis is a Software Engineer. Contact via email, GitHub, Instagram, LinkedIn.">
+  <meta name="author" content="Usanov Denis">
+  <meta name="keywords" content="Usanov Denis, Software Engineer, dck">
+  <link rel="icon" type="image/png" href="favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --glass-bg: rgba(255,255,255,0.55);
-      --glass-border: rgba(255,255,255,0.4);
+      --glass-bg: rgba(255,255,255,0.65);
+      --glass-border: rgba(255,255,255,0.5);
       --text-main: #1a1a1a;
       --text-sub: #555;
       --accent1: #4f9cf9;
@@ -23,19 +27,18 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      background: linear-gradient(160deg, #c1d9f7 0%, #f2f9fc 60%, #b3e0e5 100%);
+      background: linear-gradient(160deg, #a8c7f0 0%, #f2f9fc 60%, #8fd4db 100%);
       -webkit-font-smoothing: antialiased;
       padding: env(safe-area-inset-top) 20px env(safe-area-inset-bottom);
       position: relative;
     }
 
-    /* optional radial overlays for more depth */
     body::before {
       content: "";
       position: fixed;
       inset: 0;
-      background: radial-gradient(circle at top right, rgba(193,217,247,0.7), transparent),
-                  radial-gradient(circle at bottom left, rgba(179,224,229,0.7), transparent);
+      background: radial-gradient(circle at top right, rgba(168,199,240,0.6), transparent),
+                  radial-gradient(circle at bottom left, rgba(143,212,219,0.6), transparent);
       z-index: -1;
     }
 
@@ -43,11 +46,12 @@
       width: 100%;
       max-width: 420px;
       background: var(--glass-bg);
-      backdrop-filter: blur(18px) saturate(180%);
-      -webkit-backdrop-filter: blur(18px) saturate(180%);
+      backdrop-filter: blur(20px) saturate(200%);
+      -webkit-backdrop-filter: blur(20px) saturate(200%);
       border-radius: 26px;
-      border: 1px solid var(--glass-border);
-      box-shadow: 0 8px 40px rgba(31, 38, 135, 0.15);
+      border: 2px solid var(--glass-border);
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2),
+                  inset 0 1px 0 rgba(255, 255, 255, 0.8);
       text-align: center;
       padding: 40px 28px 34px;
       position: relative;
@@ -57,9 +61,10 @@
       content: "";
       position: absolute;
       inset: 0;
-      border-radius: 26px;
-      background: linear-gradient(145deg, rgba(255,255,255,0.6), rgba(255,255,255,0.15));
+      border-radius: 24px;
+      background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.05) 100%);
       z-index: 0;
+      pointer-events: none;
     }
 
     .content { position: relative; z-index: 1; }
@@ -153,10 +158,10 @@
   <main class="card">
     <div class="content">
       <div class="avatar-wrap">
-        <img src="images/picture.png" alt="Usanov Denis" class="avatar">
+        <img src="images/picture.png" alt="Usanov Denis - Software Engineer" class="avatar">
       </div>
-      <div class="name">Usanov Denis</div>
-      <div class="role">Software Engineer</div>
+      <h1 class="name">Usanov Denis</h1>
+      <p class="role">Software Engineer</p>
 
       <nav class="socials">
         <a class="icon-btn" href="mailto:denis@usanov.info" aria-label="Email">
