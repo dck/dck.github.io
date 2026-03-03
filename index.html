@@ -87,23 +87,23 @@
     /* ── Card ── */
     .card {
       width: 100%;
-      max-width: 360px;
+      max-width: 480px;
       text-align: center;
-      padding: 44px 40px;
+      padding: 56px 52px;
     }
 
     /* ── Avatar ── */
     .avatar-wrap {
-      width: 90px;
-      height: 90px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
-      margin: 0 auto 22px;
+      margin: 0 auto 30px;
       position: relative;
     }
 
     .avatar {
-      width: 90px;
-      height: 90px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       object-fit: cover;
       object-position: center top;
@@ -116,23 +116,23 @@
 
     /* ── Name ── */
     .name {
-      font-size: clamp(1.2rem, 5vw, 1.45rem);
+      font-size: clamp(1.55rem, 5vw, 1.9rem);
       font-weight: 500;
       color: var(--name-color);
       letter-spacing: -0.02em;
-      margin-bottom: 9px;
+      margin-bottom: 12px;
       line-height: 1.2;
     }
 
     /* ── Role ── */
     .role {
-      margin-bottom: 28px;
+      margin-bottom: 36px;
       line-height: 1.65;
     }
 
     .role-title {
       display: block;
-      font-size: clamp(0.72rem, 3vw, 0.78rem);
+      font-size: clamp(0.92rem, 3.2vw, 1.02rem);
       font-weight: 400;
       color: var(--role1-color);
       letter-spacing: 0.01em;
@@ -140,7 +140,7 @@
 
     .role-spec {
       display: block;
-      font-size: clamp(0.66rem, 2.5vw, 0.7rem);
+      font-size: clamp(0.84rem, 2.8vw, 0.92rem);
       font-weight: 300;
       color: var(--role2-color);
       letter-spacing: 0.04em;
@@ -150,13 +150,13 @@
     .socials {
       display: flex;
       justify-content: center;
-      gap: 9px;
+      gap: 12px;
       flex-wrap: wrap;
     }
 
     .icon-btn {
-      width: 36px;
-      height: 36px;
+      width: 48px;
+      height: 48px;
       border-radius: 50%;
       background: rgba(80, 200, 180, 0.06);
       border: 1px solid var(--teal-border);
@@ -172,12 +172,12 @@
     .icon-btn::after {
       content: '';
       position: absolute;
-      inset: -8px;
+      inset: -6px;
     }
 
     .icon-btn svg {
-      width: 15px;
-      height: 15px;
+      width: 20px;
+      height: 20px;
       fill: var(--teal-dim);
       transition: fill 0.2s;
       pointer-events: none;
@@ -196,8 +196,13 @@
     }
 
     /* ── Responsive tweaks ── */
-    @media (max-width: 400px) {
+    @media (max-width: 520px) {
+      .card { padding: 44px 32px; }
+    }
+
+    @media (max-width: 380px) {
       .card { padding: 36px 24px; }
+      .avatar-wrap, .avatar { width: 100px; height: 100px; }
     }
 
     @media (hover: none) {
@@ -218,8 +223,8 @@
         src="images/picture.png"
         alt="Denis Usanov — Software Engineer & Engineering Manager"
         class="avatar"
-        width="90"
-        height="90"
+        width="120"
+        height="120"
         loading="eager"
         decoding="async"
         itemprop="image"
