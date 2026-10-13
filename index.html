@@ -44,6 +44,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": "https://usanov.info/#person",
     "name": "Denis Usanov",
     "alternateName": ["Денис Усанов", "Usanov Denis"],
     "url": "https://usanov.info",
@@ -151,6 +152,26 @@
       font-weight: 300;
       color: var(--role2-color);
       letter-spacing: 0.04em;
+    }
+
+    .lab {
+      margin-top: 32px;
+      font-size: clamp(0.84rem, 2.8vw, 0.92rem);
+      font-weight: 300;
+      color: var(--role2-color);
+      letter-spacing: 0.04em;
+    }
+
+    .lab a {
+      color: var(--teal);
+      text-decoration: none;
+      border-bottom: 1px solid var(--teal-border);
+      transition: border-color 0.2s;
+    }
+
+    .lab a:hover,
+    .lab a:focus-visible {
+      border-bottom-color: var(--teal);
     }
 
     /* ── Social icons ── */
@@ -267,6 +288,7 @@
       </a>
 
     </nav>
+    <p class="lab"><a href="https://udlab.space">udlab.space</a></p>
   </main>
 </body>
 </html>
